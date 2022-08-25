@@ -1,81 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Xavier Haniquaut</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+    <style>
+      :where(:root) {
+        font-display: swap;
+      }
+      mark {
+        background-color: rgba(0, 255, 255, 0.5);
+        border-radius: 4px;
+      }
+      mark a {
+        color: inherit;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Xavier Haniquaut</title>
-  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-</head>
+  <body>
+    <main class="container">
+      <h2>Me 👋</h2>
+      <ul>
+        <li>Xavier Haniquaut <sub>\ɡza.vje a.ni.ko\</sub></li>
+        <li id="age">Born in 1990</li>
+        <li>
+          Lille, France
+          <sub
+            ><time
+              id="local_time"
+              style="font-variant-numeric: tabular-nums"
+            ></time
+          ></sub>
+        </li>
+        <li>he/him</li>
+        <li>+33 6 37 73 93 35</li>
+        <li>
+          <a href="mailto:xavier.haniquaut@gmail.com"
+            >xavier.haniquaut@gmail.com</a
+          >
+          /
+          <a href="https://github.com/xavhan">@xavhan</a>
+        </li>
+      </ul>
 
-<body>
-  <main class="container">
-    <h2>Me 👋</h2>
-    <ul>
-      <li>Xavier Haniquaut <sub>\ɡza.vje a.ni.ko\</sub></li>
-      <li id="age"></li>
-      <li>Lille, France <sub><time id="local_time"></time></sub></li>
-      <li>he/him</li>
-      <li>+33 6 37 73 93 35</li>
-      <li>
-        <a href="mailto:xavier.haniquaut@gmail.com">xavier.haniquaut@gmail.com</a>/
-        <a href="https://github.com/user/xavhan">@xavhan</a>
-      </li>
-    </ul>
+      <h2>Work skills</h2>
+      <ul>
+        <li>Written and spoken English</li>
+        <li>
+          Typescript and Javascript languages with their associated design
+          patterns
+        </li>
+        <li>Frontend Frameworks and associated libraries</li>
+        <li>Computer Science, algorithms, code paradigms, FSM, ...</li>
+        <li>Project and team management</li>
+        <li>Automation</li>
+        <li>Legacy codebase management</li>
+        <li>
+          Frontend related topics such as internationalization, accessibility,
+          performance, state management, maintainability, testing,
+          documentation...
+        </li>
+        <li>Technical writing</li>
+        <li>Friendly and eager to learn</li>
+      </ul>
 
-    <h2>Work skills</h2>
-    <ul>
-      <li>Written and spoken English</li>
-      <li>Typescript and Javascript languages with their associated design patterns</li>
-      <li>Frontend Frameworks and associated libraries</li>
-      <li>Computer Science, algorithms, code paradigms, FSM, ...</li>
-      <li>Project and team management</li>
-      <li>Automation</li>
-      <li>Legacy codebase management</li>
-      <li>Frontend related topics such as internationalization, accessibility, performance, state management,
-        maintainability, testing, documentation...</li>
-      <li>Technical writing</li>
-      <li>Friendly and eager to learn</li>
-    </ul>
+      <h2>School</h2>
+      <ul>
+        <li>
+          Engineering school (HEI Lille) in IT department | graduated in 2013
+        </li>
+        <li>Computer Science semester at Laval University in Quebec</li>
+      </ul>
 
-    <h2>School</h2>
-    <ul>
-      <li>Engineering school (HEI Lille) in IT department | graduated in 2013</li>
-      <li>Computer Science semester at Laval University in Quebec</li>
-    </ul>
+      <h2>Work experiences</h2>
+      <ul>
+        <li>Junior frontend developer at <mark>myEdeejay</mark> for 1 year</li>
+        <li>Junior frontend developer at <mark>Manganelli</mark> for 1 year</li>
+        <li>
+          From junior developer to Tech Lead frontend at
+          <mark
+            ><a href="https://simplifield.com" target="_blank"
+              >SimpliField</a
+            ></mark
+          >
+          for 6 years
+        </li>
+        <li>
+          Tech Lead eCommerce at
+          <mark
+            ><a href="https://decathlon.com" target="_blank">Decathlon</a></mark
+          >
+          for 8 months
+        </li>
+        <li>
+          Senior Developer at
+          <mark
+            ><a href="https://www.perfectdraft.com" target="_blank"
+              >PerfectDraft</a
+            ></mark
+          >
+          for 10 months
+        </li>
+        <li>
+          ➡️ Senior Frontend Engineer at
+          <mark><a href="https://rayon.design" target="_blank">Rayon</a></mark>
+          <span id="current_job">since December 2022</span>
+        </li>
+      </ul>
 
-    <h2>Work experiences</h2>
-    <ul>
-      <li>Junior frontend developer at <mark>myEdeejay</mark> during 1 year</li>
-      <li>Junior frontend developer at <mark>Manganelli</mark> during 1 year</li>
-      <li>From junior developer to Tech Lead frontend at <mark>Simplifield</mark> during 6 years</li>
-      <li>Tech Lead at <mark>Decathlon</mark> during 8 months</li>
-      <li>Senior Developer at <mark>PerfectDraft</mark> since <span id="current_job"></span> months</li>
-    </ul>
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Cooking / Food / Natural wine</li>
+        <li>Juggling</li>
+        <li>Vinyl records / DIY HiFi</li>
+        <li>Bouldering / Cycling</li>
+      </ul>
+    </main>
+    <script>
+      const BIRTHDAY = "1990-06-30";
+      const CURRENT_JOB_START_DATE = "2022-11-05";
 
-    <h2>Hobbies</h2>
-    <ul>
-      <li>Cooking / Food / Natural wine</li>
-      <li>Juggling</li>
-      <li>Vinyl records / DIY HiFi</li>
-      <li>Bouldering / Cycling</li>
-    </ul>
-  </main>
-  <script>
-    const BIRTHDAY = '1990-06-30'
+      const yearDiff = (date1, date2) =>
+        Math.abs(date2.getFullYear() - date1.getFullYear()) - 1;
+      const dayDiff = (date1, date2) =>
+        Math.abs(date1.getDate() - date2.getDate()) - 1;
+      const monthDiff = (date1, date2) =>
+        yearDiff(date1, date2) * 12 -
+        Math.abs(date1.getMonth() - date2.getMonth());
 
-    const getYearDiff = (date1, date2) => Math.abs(date2.getFullYear() - date1.getFullYear());
-    const monthDiff = (date1, date2) => Math.abs(date1.getMonth() - date2.getMonth()) + (12 * getYearDiff(date1, date2))
-    const getLocalTime = (timeZone) => (new Date()).toLocaleString([], { timeZone, hour12: true, hour: "2-digit", minute: '2-digit' })
-    
-    document.querySelector('#age').innerHTML = `${BIRTHDAY} (I am ${getYearDiff(new Date(), new Date('1990-06-30'))})`
-    document.querySelector('#local_time').innerHTML = getLocalTime('Europe/Paris')
-    document.querySelector('#current_job').innerHTML = monthDiff(new Date(), new Date('2022-02'))
+      const plural = (n, dic) =>
+        (n === 1 ? dic.one : dic.other).replace(/#/, n);
 
-    // a11y
-    document.querySelectorAll('h2, li').forEach(x => x.tabIndex = 0);
-  </script>
-</body>
+      const getLocalTime = (timeZone) =>
+        new Date().toLocaleString([], {
+          timeZone,
+          hour12: true,
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        });
 
+      document.querySelector("#age").innerHTML = `I am ${yearDiff(
+        new Date(),
+        new Date(BIRTHDAY)
+      )}`;
+
+      // poll every second
+      setInterval(() => {
+        document.querySelector("#local_time").innerHTML =
+          getLocalTime("Europe/Paris");
+      }, 1000);
+
+      document.querySelector("#current_job").innerHTML = [
+        "for",
+        plural(yearDiff(new Date(), new Date(CURRENT_JOB_START_DATE)), {
+          one: "1 year",
+          other: "# years",
+        }),
+        "and",
+        plural(monthDiff(new Date(), new Date(CURRENT_JOB_START_DATE)) % 12, {
+          one: "1 month",
+          other: "# months",
+        }),
+      ].join(" ");
+      // a11y
+      document.querySelectorAll("h2, li").forEach((x) => (x.tabIndex = 0));
+    </script>
+  </body>
 </html>
