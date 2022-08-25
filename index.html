@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Xavier Haniquaut</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+</head>
+
+<body>
+  <main class="container">
+    <h2>Me 👋</h2>
+    <ul>
+      <li>Xavier Haniquaut <sub>\ɡza.vje a.ni.ko\</sub></li>
+      <li id="age"></li>
+      <li>Lille, France <sub><time id="local_time"></time></sub></li>
+      <li>he/him</li>
+      <li>+33 6 37 73 93 35</li>
+      <li>
+        <a href="mailto:xavier.haniquaut@gmail.com">xavier.haniquaut@gmail.com</a>/
+        <a href="https://github.com/user/xavhan">@xavhan</a>
+      </li>
+    </ul>
+
+    <h2>Work skills</h2>
+    <ul>
+      <li>Written and spoken English</li>
+      <li>Typescript and Javascript languages with their associated design patterns</li>
+      <li>Frontend Frameworks and associated libraries</li>
+      <li>Computer Science, algorithms, code paradigms, FSM, ...</li>
+      <li>Project and team management</li>
+      <li>Automation</li>
+      <li>Legacy codebase management</li>
+      <li>Frontend related topics such as internationalization, accessibility, performance, state management,
+        maintainability, testing, documentation...</li>
+      <li>Technical writing</li>
+      <li>Friendly and eager to learn</li>
+    </ul>
+
+    <h2>School</h2>
+    <ul>
+      <li>Engineering school (HEI Lille) in IT department | graduated in 2013</li>
+      <li>Computer Science semester at Laval University in Quebec</li>
+    </ul>
+
+    <h2>Work experiences</h2>
+    <ul>
+      <li>Junior frontend developer at <mark>myEdeejay</mark> during 1 year</li>
+      <li>Junior frontend developer at <mark>Manganelli</mark> during 1 year</li>
+      <li>From junior developer to Tech Lead frontend at <mark>Simplifield</mark> during 6 years</li>
+      <li>Tech Lead at <mark>Decathlon</mark> during 8 months</li>
+      <li>Senior Developer at <mark>PerfectDraft</mark> since <span id="current_job"></span> months</li>
+    </ul>
+
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Cooking / Food / Natural wine</li>
+      <li>Juggling</li>
+      <li>Vinyl records / DIY HiFi</li>
+      <li>Bouldering / Cycling</li>
+    </ul>
+  </main>
+  <script>
+    const BIRTHDAY = '1990-06-30'
+
+    const getYearDiff = (date1, date2) => Math.abs(date2.getFullYear() - date1.getFullYear());
+    const monthDiff = (date1, date2) => Math.abs(date1.getMonth() - date2.getMonth()) + (12 * getYearDiff(date1, date2))
+    const getLocalTime = (timeZone) => (new Date()).toLocaleString([], { timeZone, hour12: true, hour: "2-digit", minute: '2-digit' })
+    
+    document.querySelector('#age').innerHTML = `${BIRTHDAY} (I am ${getYearDiff(new Date(), new Date('1990-06-30'))})`
+    document.querySelector('#local_time').innerHTML = getLocalTime('Europe/Paris')
+    document.querySelector('#current_job').innerHTML = monthDiff(new Date(), new Date('2022-02'))
+
+    // a11y
+    document.querySelectorAll('h2, li').forEach(x => x.tabIndex = 0);
+  </script>
+</body>
+
+</html>
